@@ -9,7 +9,7 @@ for j = 2:1000
   x=v0*cos(theta0)*t(j);
   y=v0*sin(theta0)*t(j)-0.5*g*t(j)^2; 
   plot(x,y,'o','MarkerFaceColor','b','MarkerSize',8) 
-  axis([0 3 0 0.8])
+  axis([0 3 0 0.8]) % to set the maximum value of x axis and y axis
   M(j)=getframe;
   if y<=0, break, end
 end
